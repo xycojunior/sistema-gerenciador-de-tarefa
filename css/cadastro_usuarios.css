@@ -1,0 +1,75 @@
+/* Estilo do Main */
+main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Altura da tela menos a altura do nav */
+}
+
+main h2 {
+    text-align: center;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Card do Formulário */
+.user-form-card {
+    max-width: 400px;
+    width: 100%;
+    background-color: #d8eafd; /* Azul suave */
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-form-card h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.user-form-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.user-form-card label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+.user-form-card input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.user-form-card input:focus {
+    border-color: #4f8bc9;
+    outline: none;
+}
+
+.cadastrar {
+    margin-top: 12px ;
+    padding: 10px;
+    width: 107%;
+    background-color: #0080ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-form-card button:hover {
+    background-color: #3b6ca8;
+}

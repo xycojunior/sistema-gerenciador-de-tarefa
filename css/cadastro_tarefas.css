@@ -1,0 +1,69 @@
+/* Estilo do Main */
+main {
+    margin-top: 20px;
+    margin-left: 60px;
+    text-align: center;
+}
+
+main h2 {
+    color: #1e1e1e;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+/* Card do Formulário */
+.task-form-card {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px 50px;
+    background-color: #d8eafd; /* Azul suave */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-form-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.task-form-card label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1rem ;
+    text-align: left;
+    
+}
+
+.task-form-card input,
+.task-form-card textarea,
+.task-form-card select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.task-form-card input:focus,
+.task-form-card textarea:focus,
+.task-form-card select:focus {
+    border-color: #4f8bc9;
+    outline: none;
+}
+
+.task-form-card button {
+    padding: 10px 20px;
+    background-color: #0080ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-form-card button:hover {
+    background-color: #3b6ca8;
+}

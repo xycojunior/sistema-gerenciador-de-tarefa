@@ -1,0 +1,145 @@
+/* Reset básico */
+body, h1, h2, p, div, section, nav, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0080ff;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 0; /* Remove bordas arredondadas, se necessário */
+    position: fixed; /* Fixar no topo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Garante que ocupe toda a largura */
+    z-index: 1000; /* Mantém o nav acima de outros elementos */
+}
+
+
+.nav-left {
+    font-size: 1.5rem;
+
+}
+nav h2{
+    font-size: 1.5rem;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; /* Espaço para a linha */
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Espessura da linha */
+    background-color: white; /* Cor da linha */
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%; /* Linha preenche toda a largura no hover */
+}
+
+main{
+    margin-top: 120px;
+}
+main h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #1e1e1e;
+}
+
+.tasks-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+section {
+    flex: 1;
+    background-color: #d8eafd; /* Azul suave */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    color: #0080ff;
+}
+
+.task-card {
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-card p {
+    margin: 5px 0;
+}
+
+.card-actions {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.card-actions button {
+    background-color: #0080ff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card-actions button:hover {
+    background-color: #3b6ca8;
+}
+
+form {
+    margin-top: 10px;
+}
+
+form label {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+form button {
+    background-color: #0080ff;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #3b6ca8;
+}
